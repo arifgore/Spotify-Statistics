@@ -5,7 +5,7 @@ jsonList = []
 i=0
 while(True):
     try:
-        fileName = f"StreamingHistory{i}.json"
+        fileName = f"StreamingHistory_music_{i}.json"
         file = open(fileName,"r")
         jsonList.extend(json.loads(file.read()))
         file.close()
